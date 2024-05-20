@@ -23,7 +23,7 @@ OpenEverythingInCurrentPath()
             Return window.Document.Folder.Self.Path
         }
     }
-    Run("`"C:\Program Files\Everything\Everything.exe`"" . " -p " . explorerGetPath()) ;使用获取到的路径作为参数，运行Everything并指定该路径
+    Run('"C:\Program Files\Everything\Everything.exe"' ' -p ' '"' . explorerGetPath() . '"') ;使用获取到的路径作为参数，运行Everything并指定该路径
 }
 
 OpenEverythingInExplorerWithCurrentPath()
